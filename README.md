@@ -1,218 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>THE ANIME-H</title>
+<title>Page Title</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
 body {
-  font-family: algerian;
-  padding: 30px;
-  background-size:cover;
-  background-attachment:fixed;
-
-}
-h2 i{
-  color: blue;
-}
-.marco1{
-  color: #923BB7;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-/* Header/Blog Title */
+/* Style the header */
 .header {
-  padding: 30px;
-  font-size: 40px;
+  padding: 80px;
   text-align: center;
-  background: black;
+  background: #1abc9c;
+  color: white;
 }
 
-.titulo{
-color: #3498DB
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
 }
 
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
+/* Style the navigation bar links */
+.navbar a {
   float: left;
-  width: 75%;
-  background: "https://cdn.idntimes.com/content-images/community/2017/11/all-aaf6ce54eab7f2a32b718d3ece9abf45_600x400.jpeg";
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-  background: "https://cdn.idntimes.com/content-images/community/2017/11/all-aaf6ce54eab7f2a32b718d3ece9abf45_600x400.jpeg" ;
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
 }
 
-/* Fake image */
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
 .fakeimg {
-  background: white;
+  background-color: #aaa;
   width: 100%;
-  padding: 15px;
-}
-
-img{
-width: 100%;
-}
-
-.fakeimg1 {
-  
-  width: 60%;
-  
-}
-
-
-/* Add a card effect for articles */
-.card {
-   background-color: #C0C0C0;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding: 20px;
 }
 
 /* Footer */
 .footer {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
-background: black;
-margin-top: 10px;
+  background: #ddd;
 }
 
-.marquee{
-color: blue;
-font-size: 50px;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
 }
 
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
   }
 }
 </style>
 </head>
-<body background="https://cdn.idntimes.com/content-images/community/2017/11/all-aaf6ce54eab7f2a32b718d3ece9abf45_600x400.jpeg">
+<body>
 
 <div class="header">
-  <i><h2><div class="titulo">THE ANIME-H</div> </h2></i>
+  <h1>BIENVENIDO AL MUNDO DEL EXCEL</h1>
+  <p>Nunca es tarde para aprender.</p>
+</div>
+
+<div class="navbar">
+ <a href="pagina1.html">Excel Basico</a>
+  <a href="pagina2.html">Excel Intermedio</a>
+  <a href="pagina3.html">Excel Avanzado</a>
+  <a href="https://www.paypal.me/royercancer" class="right">Donaciones</a>
 </div>
 
 <div class="row">
-  <div class="leftcolumn">
-
-
-
-
-     <div class="card">
-      <h2><i>Katainaka ni Totsui cap 1-sub español</i></h2>
-      
-      <div class="fakeimg" ><img src="https://k50.kn3.net/taringa/2/5/1/6/4/4/60/icemak_ep/550x309_3E5.jpg"></div>
-      <p><h2><div class="marco1"> DESCARGA </div></h2></p>
-      <center>
-<p><h2>OPCION 1</h2></p>
-       <div class="fakeimg1">
-         <a href="http://zo.ee/6C5S2"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000">
-       </div></a>
-       <p><h2>OPCION 2</h2></p>
-        <div class="fakeimg1">
-          <a href="http://swarife.com/5WRS"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000">
-        </div></a>
-        </center>
-    </div>
-
-    <div class="card">
-      <h2><i>Katainaka ni Totsui cap 2-sub español</i></h2>
-      
-      <div class="fakeimg" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9C4G6YDj9PkwhYl5eBvpgQUIZL3iPOWz4uWdursXwHNC1cgtR"></div>
-      <p><h2><div class="marco1"> DESCARGA </div></h2></p>
-      <center>
-<p><h2>OPCION 1</h2></p>
-       <div class="fakeimg1">
-         <a href="http://zo.ee/6C5SL"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000"></a>
-       </div>
-       <p><h2>OPCION 2</h2></p>
-        <div class="fakeimg1">
-          <a href="http://swarife.com/5WRS"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000"></a>
-        </div>
-        </center>
-    </div>
-
-    <div class="card">
-      <h2><i>Katainaka ni Totsui cap 3-sub español</i></h2>
-      
-      <div class="fakeimg" ><img src="https://images-cdn.9gag.com/photo/aGjYLZ5_460s.jpg"></div>
-      <p>
-        <h2> <div class="marco1"> DESCARGA </div></h2>
-      </p>
-      <center>
-<p><h2>OPCION 1</h2></p>
-       <div class="fakeimg1">
-         <a href="http://zo.ee/6C5SO"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000">
-       </div></a>
-       <p><h2>OPCION 2</h2></p>
-        <div class="fakeimg1">
-
-          <a href="http://dapalan.com/UgcD"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000"></a>
-        </div>        </center>
-    </div>
-
-     <div class="card">
-      <h2><i>Katainaka ni Totsui cap 4-sub español</i></h2>
-      
-      <div class="fakeimg" ><img src="https://i.ytimg.com/vi/bVHj3FO_3ck/maxresdefault.jpg"></div>
-      <p><h2><div class="marco1"> DESCARGA </div></h2></p>
-      <center>
-<p><h2>OPCION 1</h2></p>
-       <div class="fakeimg1">
-         <a href="http://zo.ee/6C5SR"><img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000"></a>
-       </div>
-       <p><h2>OPCION 2</h2></p>
-        <div class="fakeimg1">
-         <a href="http://dapalan.com/UhTw"> <img src="https://eampu25.files.wordpress.com/2015/11/para-el-word-press.png?w=1000"></a>
-        </div>
-        </center>
-    </div>
-
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
   </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
-  <div class="rightcolumn">
-    <div class="card">
-      <h4>Apoyame con una donacion para mejores contenidos</h4>
-      <div class="fakeimg" ><a href="https://www.paypal.me/royercancer" target="_blank"><img src="https://i0.wp.com/aprendeios.com/wp-content/uploads/sites/6/2017/07/paypal-logo.png?fit=672%2C261&ssl=1"></a></div>
-      
-    </div>
- 
-    <div class="card">
-      <h3>Sigueme en Youtube</h3>
-      <div class="fakeimg">
-        <a href="https://www.youtube.com/channel/UCc8OdfvK_NMbWVUhiB7YaVQ?view_as=subscriber" target="_blank">
-          <img src="https://elmercurio.com.mx/wp-content/uploads/2017/08/youtube-webiste-logo-app-video.png">
-        </a>
-      </div>
-    </div>
+    <br>
+
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <br>
+
+
+     <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <br>
+
+     <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <br>
+
+     <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <br>
+
+     <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
 </div>
 
 <div class="footer">
-  <h2><marquee class ="marquee" > Gracias por la visita </marquee></h2>
+  <h2>Footer</h2>
 </div>
-
 
 </body>
 </html>
